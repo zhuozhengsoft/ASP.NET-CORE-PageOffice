@@ -1,0 +1,19 @@
+﻿
+@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>禁止Excel文档鼠标右键</title>
+</head>
+<body>
+    <form id="form1">
+        <div style="color:Red">打开Excel文档后，鼠标右键，发现右键失效。</div>
+        <div style=" width:100%; height:700px;">
+            @Html.Raw(ViewBag.POCtrl)
+        </div>
+    </form>
+</body>
+</html>

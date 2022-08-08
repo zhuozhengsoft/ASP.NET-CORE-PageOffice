@@ -1,0 +1,24 @@
+﻿
+@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>Word</title>
+    <script type="text/javascript">
+        function Save(){
+          document.getElementById("PageOfficeCtrl1").WebSave();
+        }
+    </script>
+</head>
+<body>
+    <h4>文件打开页面的token的值为：@Html.Raw(ViewBag.testToken)</h4>
+    <div style="height:800px;width:auto;">
+        @Html.Raw(ViewBag.POCtrl)
+    </div>
+</body>
+</html>

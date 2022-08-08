@@ -1,0 +1,23 @@
+﻿
+@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>最简单的打开保存Exce文件</title>
+</head>
+<body>
+    <script type="text/javascript">
+        function Save() {
+            document.getElementById("PageOfficeCtrl1").WebSave();
+        }
+    </script>
+    <form id="form1">
+        <div style=" width:100%; height:700px;">
+            @Html.Raw(ViewBag.POCtrl)
+        </div>
+    </form>
+</body>
+</html>

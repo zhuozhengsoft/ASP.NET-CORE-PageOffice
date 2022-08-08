@@ -1,0 +1,17 @@
+﻿@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>SaveData</title>
+</head>
+<body>
+    @Html.Raw(ViewBag.content)
+    <!--要输出保存页面的内容，就必须要用@Html.Raw(ViewBag.POShowPage)-->
+    @Html.Raw(ViewBag.POShowPage)
+</body>
+</html>

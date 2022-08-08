@@ -1,0 +1,27 @@
+﻿
+@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>主页面传递参数到子页面</title>
+    <script type="text/javascript">
+        function Save() {
+            document.getElementById("PageOfficeCtrl1").WebSave();
+            window.external.close();
+        }
+    </script>
+</head>
+<body>
+    获取index中第一个文本框中的值：</br>
+    代码：String txt=(String)session.getAttribute("txt");</br>
+    输出：@Html.Raw(ViewBag.txt)</br></br>
+    <form id="form1">
+        <div style=" width:auto; height:700px;">
+            @Html.Raw(ViewBag.POCtrl)
+        </div>
+    </form>
+</body>
+</html>

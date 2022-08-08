@@ -1,0 +1,25 @@
+﻿
+@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>在word文档中光标处插入分页符</title>
+</head>
+<body>
+    <script type="text/javascript">
+        function Save() {
+            document.getElementById("PageOfficeCtrl1").WebSave();
+            if (document.getElementById("PageOfficeCtrl1").CustomSaveResult == "ok") {
+                alert("保存成功！请在/wwwroot/InsertPageBreak2/doc目录下查看合并后的新文档\"test3.doc\"。");
+            }
+        }
+
+    </script>
+    <div style=" width:auto; height:700px;">
+        @Html.Raw(ViewBag.POCtrl)
+    </div>
+</body>
+</html>

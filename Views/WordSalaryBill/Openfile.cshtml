@@ -1,0 +1,25 @@
+﻿
+@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title></title>
+    <script type="text/javascript">
+        function Save() {
+            document.getElementById("PageOfficeCtrl1").WebSave();
+        }
+    </script>
+</head>
+<body>
+    <a href="#" onclick="window.external.close();">返回列表页</a>
+    <form id="form1">
+        <div style="width: auto; height: 600px;">
+            @Html.Raw(ViewBag.err)
+            @Html.Raw(ViewBag.POCtrl)
+        </div>
+    </form>
+</body>
+</html>

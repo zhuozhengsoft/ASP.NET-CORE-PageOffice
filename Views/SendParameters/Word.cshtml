@@ -1,0 +1,47 @@
+﻿
+@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title> </title>
+    <script type="text/javascript">
+        function Save() {
+            document.getElementById("PageOfficeCtrl1").WebSave();
+        }
+
+        function SetFullScreen() {
+            document.getElementById("PageOfficeCtrl1").FullScreen = !document.getElementById("PageOfficeCtrl1").FullScreen;
+        }
+
+        function Close() {
+            window.external.close();
+        }
+    </script>
+</head>
+<body style="overflow:hidden">
+    <form id="form1">
+        <div style="font-size: 14px;">
+            <div style="border:1px solid black;">
+                PageOffice给保存页面传值的三种方式：<br/>
+                <span>1.通过设置保存页面的url中的?给保存页面传递参数：</span><br>               
+                <span>2.通过input隐藏域给保存页面传递参数：</span><br/>
+                <span>3.通过Form控件给保存页面传递参数(这里的Form控件包括输入框、下拉框、单选框、复选框、TextArea等类型的控件)：</span><br/>              
+            </div>
+            <span style="color: Red;">更新人员信息：</span><br />
+            <input id="age" name="age" type="hidden" value="25" />
+            <span style="color: Red;">姓名：</span><input id="userName" name="userName" type="text" value="张三" /><br />
+            <span style="color: Red;">性别：</span><select id="selSex" name="selSex">
+                <option value="男">男</option>
+                <option value="女">女</option>
+            </select>
+        </div>
+        <div style="width: auto; height: 700px;">
+            @Html.Raw(ViewBag.POCtrl)
+        </div>
+    </form>
+</body>
+</html>

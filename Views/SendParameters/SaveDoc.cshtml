@@ -1,0 +1,19 @@
+﻿
+@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title>My  'SaveFile' starting page</title>
+</head>
+<body>
+    <div>
+        @Html.Raw(ViewBag.content)
+        <!--要输出保存页面的内容，就必须要用@Html.Raw(ViewBag.POShowPage)-->
+        @Html.Raw(ViewBag.POShowPage)
+    </div>
+</body>
+</html>
