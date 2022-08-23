@@ -6,12 +6,12 @@
 
 ### 二、项目环境要求
 
-​    Visual Studio2019 及以上版本
+​    Visual Studio2019 及以上版本。
 
 ### 三、项目运行步骤
 
 1. 使用git clone或者直接下载项目压缩包到本地并解压缩。
-2. 双击运行ASP.NET-CORE-PageOffice目录下的NetCoreSamples5.sln，并对Bin/PageOfficeNetCore.dll添加引用，然后运行示例并访问/index页面查看示例效果。
+2. 双击运行ASP.NET-CORE-PageOffice目录下的NetCoreSamples5.sln，然后运行示例并访问/index页面查看示例效果。
 
 ### 四、PageOffice序列号
 
@@ -20,7 +20,7 @@
 
 ### 五、集成PageOffice到您的项目中的关键步骤
 
-1. 拷贝“ASP.NET-CORE-PageOffice/Bin”目录下的“PageOfficeNetCore.dll”文件夹到您自己网站的Bin目录下,并对该dll添加引用。 
+1. 在您的web项目的“依赖项-包-管理NuGet程序包”中搜索到“Zhuozhengsoft.PageOffice"程序后安装最新的版本。 
 2. 拷贝“ASP.NET-CORE-PageOffice/Controllers”目录下的PageOfficeController.cs文件到您项目的Controllers文件夹下。
 3. 在您项目的wwwroot文件夹下新建lic文件夹，此文件夹用来存放PageOffice的授权文件。
 4. 对PageOffice编程控制：
