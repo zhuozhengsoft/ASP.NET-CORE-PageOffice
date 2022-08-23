@@ -18,7 +18,6 @@
 
   <ItemGroup>
     <None Include="bin\Debug\netcoreapp3.1\DataBase.db" />
-    <None Include="bin\PageOfficeNetCore.dll" />
     <None Include="wwwroot\Token\doc\test.doc" />
     <None Include="wwwroot\Token\SaveFile.jsp" />
     <None Include="wwwroot\Token\Word.jsp" />
@@ -32,6 +31,7 @@
     </PackageReference>
     <PackageReference Include="Microsoft.VisualStudio.Web.CodeGeneration.Design" Version="3.1.5" />
     <PackageReference Include="System.Data.SQLite" Version="1.0.113.6" />
+    <PackageReference Include="Zhuozhengsoft.PageOffice" Version="5.4.0.3" />
   </ItemGroup>
 
   <ItemGroup>
